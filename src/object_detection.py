@@ -16,7 +16,7 @@ AudioSegment.converter = "C:/Users/Lingfen/AppData/Local/Programs/" \
 
 
 def load_yolo_model():
-    weights_path = r'../models/best (8).pt'
+    weights_path = r'../model_weights/best (8).pt'
     model = torch.hub.load('WongKinYiu/yolov7', 'custom', weights_path,
                            force_reload=False, trust_repo=True)
     return model
